@@ -184,6 +184,43 @@ Weaver, B. (1986) - Photographer.  34 years ago today, the space shuttle Challen
 <br> 
 Zimmermann, K.A. (2018) Sally Ride: First American woman in space. Available at: https://www.space.com/16756-sally-ride-biography.html Accessed – 24th October 2023    
 </p>
+<hr>
+
+<script>
+var slideImages() ["Slide1.JPG", "slide2.JPG", "slide3.JPG", "slide4.JPG", slide5.JPG"]
+var currentSlide = 0;
+      
+      
+function showSlide() {
+            document.getElementbyId('slide').src = slideImages[currentSlide];
+}
+function nextSlide() {
+      currentSlide = (currentSlide +1) % slideImages.length;
+      showSlide();
+}
+function prevSlide() {
+      currentSlide = (currentSlide -1 +slideImages.length) %slideImages.length;
+      showSlide();
+}
+function showSlideNumber(slideNumber) {
+      currentSlide = slideNumber - 1;
+      showSlide();
+}
+      showSlide();
+
+</script>
+
+<div id="slide-container">
+      <img id="slide" scr="Slide1.JPG" alt="Slide 1" style="width:80%; max-width:1200px; margin-bottom:20px;">
+</div>
+
+<style>
+#slide-container {
+      text-align:center
+      postion:relative;
+}
+      
+</style>
 </body>
 
 
