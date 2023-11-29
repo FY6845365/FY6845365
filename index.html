@@ -192,7 +192,7 @@ var currentSlide = 0;
       
       
 function showSlide() {
-            document.getElementbyId('slide').src = slideImages[currentSlide];
+            document.getElementById('slide').src = slideImages[currentSlide];
 }
 function nextSlide() {
       currentSlide = (currentSlide +1) % slideImages.length;
