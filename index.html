@@ -212,13 +212,30 @@ function showSlideNumber(slideNumber) {
 <div id="slide-container">
       <img id="slide" src="Slide1.JPG" alt="Slide 1" style="width:80%; max-width:1200px;">
 </div>
-
+<div class="button-container">
+      <button class="button" onclick"prevSlide()">Previous</button>
+      <button class="button" onclick"nextSlide()">Next"</button>
+</div>
 <style>
 #slide-container {
       text-align:center;
       postion:relative;
 }
-      
+.button-container {
+      text-align:center;
+      margin:auto;
+      width: 50%;
+      margin-bottom: 10px;
+}
+.button {
+      padding:10px 20px;
+      color: white;
+      border: non;
+      border-radius: 5px;
+      font-size: 16px;
+      cursor: pointer;
+      margin: 0 5 px;
+}
 </style>
 </body>
 
