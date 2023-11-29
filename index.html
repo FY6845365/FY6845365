@@ -192,21 +192,23 @@ var currentSlide = 0;
       
       
 function showSlide() {
-            document.getElementById('slide').src = slideImages[currentSlide];
+      document.getElementById('slide').src = slideImages[currentSlide];
 }
 function nextSlide() {
-      currentSlide = (currentSlide +1) % slideImages.length;
-      showSlide();
+	currentSlide = (currentSlide + 1) % slideImages.length;
+	showSlide();
 }
+
 function prevSlide() {
-      currentSlide = (currentSlide -1 + slideImages.length) %slideImages.length;
-      showSlide();
+	currentSlide = (currentSlide -1 + slideImages.length) % slideImages.length;
+	showSlide();
 }
+
 function showSlideNumber(slideNumber) {
-      currentSlide = slideNumber - 1;
-      showSlide();
+	currentSlide = slideNumber - 1;
+	showSlide();
 }
-      showSlide();
+	showSlide();	
 </script>
 
 <div id="slide-container">
@@ -214,7 +216,7 @@ function showSlideNumber(slideNumber) {
 </div>
 <div class="button-container">
       <button class="button" onclick"prevSlide()">Previous</button>
-      <button class="button" onclick"nextSlide()">Next"</button>
+      <button class="button" onclick"nextSlide()">Next</button>
 </div>
 <style>
 #slide-container {
@@ -234,7 +236,7 @@ function showSlideNumber(slideNumber) {
       border-radius: 5px;
       font-size: 16px;
       cursor: pointer;
-      margin: 0 5 px;
+      margin: 0 5px;
 }
 </style>
 </body>
